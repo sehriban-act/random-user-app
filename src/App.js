@@ -34,6 +34,8 @@ function App() {
     const {
       street: { number, name },
     } = person.location;
+
+
     const newPerson = {
       image,
       phone,
@@ -41,8 +43,8 @@ function App() {
       password,
       age,
       street: `${number} ${name}`,
-      name: `${first}${last}`,
-      registered:`${date}`,
+      name: `${first}  ${last}`,
+      registered:`${date}`
     };
 
     setPerson(newPerson);
@@ -74,7 +76,7 @@ function App() {
           />
 
           <p className="user-title">
-            My {title} is <span className="user-value"> {value} </span>
+            My {title} is <span className=" user-value"> {value} </span>
           </p>
         </div>
 

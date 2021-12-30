@@ -102,10 +102,11 @@ img{
 .user-title {
   font-size: 18px;
   margin-bottom: 0;
+  text-align: center;
 }
 .user-value {
-  color: var(--clr-grey-1);
-  font-size: 28px;
+  color: var(--clr-red-1);
+  font-size: 20px;
 }
 .left{
   float:left;

@@ -6,7 +6,7 @@ import phone from "./assets/phone.svg";
 
 const url = "https://randomuser.me/api/";
 const defaultImage = "https://randomuser.me/api/portraits/men/75.jpg";
-
+// {person.registered.date.substring(0,10)
 function App() {
   const [loading, setLoading] = useState(true);
   const [person, setPerson] = useState("");
@@ -44,7 +44,7 @@ function App() {
       age,
       street: `${number} ${name}`,
       name: `${first}  ${last}`,
-      registered:`${date}`
+      registered:`${date}`,
     };
 
     setPerson(newPerson);
@@ -57,13 +57,7 @@ function App() {
     getPerson();
   }, []);
 
-  const handleValue = (e) => {
-    if (e.target.classList.contains("icon")) {
-      const newValue = e.target.dataset.label;
-      setTitle(newValue);
-      setValue(person[newValue]);
-    }
-  };
+
 
   return (
     <main >
@@ -100,7 +94,7 @@ function App() {
  
      <div className="middle">
       <h5>Age: {person.age}</h5>
-      <h5>Registered Date: {person.registered.substring(0,10)}</h5>
+      <h5>Registered Date: </h5>
       </div>
 {/*
         <div className="side">
